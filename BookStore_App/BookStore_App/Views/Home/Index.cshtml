@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Index home</h1>
+
+    @{ 
+
+        var data = new List<int>(){ 1,2,3,4,5};
+
+        foreach(var item in data)
+        {
+            <h1>@item</h1>
+        }
+
+    }
+
+
+
+    @{
+
+        int a = 10;
+        int b = 0;
+    }
+    <h1> Turnary- @(a==10?b=10:b=5)</h1>
+    <h1>value of b = @b</h1>
+
+    @{
+
+        int x = 1;
+        switch (x)
+        {
+            case 1:<h1>i m 1</h1>
+                break;
+            case 2:<h1>i m 2</h1>
+                break;
+            default:<h1>i m default</h1>
+                break;
+
+        }
+    }
+
+
+</body>
+</html>
